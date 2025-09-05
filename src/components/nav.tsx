@@ -29,9 +29,9 @@ function Nav() {
     fetchMessage();
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-amber-100 rounded-3xl px-4 py-8 m-0 ">
-      <h1 className="text-blackfont-serif font-bold">
-        Hello, Here is the HomePage of Haku' site, Welcome!
+    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-purple-700 to-amber-600 rounded-3xl px-4 py-8 m-0 ">
+      <h1 className="text-blackfont-serif text-cyan-100 font-bold">
+        Hello There, Welcome to The Haku's HomePage!
       </h1>
       <h2 className="text-black">message from backend: {message}</h2>
       <nav className="h-16 flex-row m-4">
