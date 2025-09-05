@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Nav />
         {/* <Heros /> */}
-        <div className="bg-cyan-50 rounded-4xl shadow-lg">
+        <div className="bg-cyan-50 mt-4 rounded-4xl shadow-lg">
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/posts" element={<Posts />} />

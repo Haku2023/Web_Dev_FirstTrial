@@ -4,7 +4,7 @@ export default function Posts() {
   return (
     <div>
       <h1 className="text-black">hello posts</h1>
-      <div className="m-4 flex flex-wrap">
+      <div className="m-4 flex flex-wrap justify-center">
         <Link
           className="rounded-3xl bg-amber-600 p-4 m-4 text-white font-bold"
           to="/posts/post-1"
