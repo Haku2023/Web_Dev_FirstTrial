@@ -15,25 +15,25 @@ export default function Posts() {
           className="rounded-3xl bg-amber-600 p-4 m-4 text-white font-bold"
           to="/posts/post-2"
         >
-          post 1 - tanjiro thinking
+          post 2 - gradient learning
         </Link>
         <Link
           className="rounded-3xl bg-amber-600 p-4 m-4 text-white font-bold"
           to="/posts/post_gemini"
         >
-          post by gemini
+          Self Introduction (Gemini)
         </Link>
         <Link
           className="rounded-3xl bg-amber-600 p-4 m-4 text-white font-bold"
           to="/posts/post_gpt"
         >
-          post by chatgpt
+          post by chatgpt AI
         </Link>
         <Link
           className="rounded-3xl bg-amber-600 p-4 m-4 text-white font-bold"
           to="/posts/post_claude"
         >
-          post by claude
+          post by claude AI
         </Link>
       </div>
     </div>

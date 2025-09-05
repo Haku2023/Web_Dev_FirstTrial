@@ -1,38 +1,29 @@
+import selfImg from "../../../assets/self.jpg";
 export default function Post_Gemini() {
   return (
     <div>
-      <header className="">
-        <div className="max-w-4xl mx-auto py-4 px-6">
-          <h1 className="text-xl font-bold text-gray-900">My Awesome Blog</h1>
-        </div>
-      </header>
-
       <main className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-6">
           <article>
             <header className="mb-8">
               <h1 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-4">
-                The Art of Simplicity in Web Design
+                In Shirahama, Ocean and the sea are awesome!
               </h1>
-              <div className="flex items-center text-gray-500">
+              <div className="flex flex-col items-center text-gray-500">
                 <img
-                  className="w-10 h-10 rounded-full mr-4"
-                  src="https://via.placeholder.com/100"
-                  alt="Author Avatar"
+                  className="aspect-auto rounded-full mr-4"
+                  src={selfImg}
+                  alt="Haku"
                 />
                 <div>
-                  <p className="font-semibold">Jane Doe</p>
+                  <p className="font-semibold">Haku</p>
                   <time dateTime="2025-08-26">August 26, 2025</time>
                 </div>
               </div>
             </header>
 
+            <hr className="border-black" />
             <figure className="mb-8">
-              <img
-                className="w-full h-auto rounded-lg shadow-md"
-                src="https://via.placeholder.com/800x400"
-                alt="Abstract design representing simplicity"
-              />
               <figcaption className="text-center text-sm text-gray-500 mt-2">
                 An abstract image representing modern design principles.
               </figcaption>
