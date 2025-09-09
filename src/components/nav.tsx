@@ -29,7 +29,7 @@ function Nav() {
     fetchMessage();
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-purple-700 to-amber-600 rounded-3xl px-4 py-8 m-0 ">
+    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-900 rounded-3xl px-4 py-8 m-0 ">
       <h1 className="text-blackfont-serif text-cyan-100 font-bold">
         Hello There, Welcome to The Haku's HomePage!
       </h1>
@@ -37,14 +37,14 @@ function Nav() {
       <nav className="h-16 flex-row m-4">
         <Link
           ref={posts_btn_1}
-          className="bg-amber-300  inline-block m-3 p-4 rounded-4xl text-black"
+          className="bg-amber-300  inline-block m-3 p-4 rounded-4xl font-bold text-black"
           to="/about"
         >
           About
         </Link>
         <Link
           ref={posts_btn_2}
-          className="bg-amber-300  inline-block m-3 p-4 rounded-2xl text-black"
+          className="bg-amber-300  inline-block m-3 p-4 rounded-2xl font-bold text-black"
           to="/posts"
         >
           Posts
