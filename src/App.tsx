@@ -1,16 +1,17 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, Posts, Post1, Post2, Gpt, Claude, Gemini } from "./pages";
-import { Footer, Nav } from "./components";
+import { Footer, Nav, Home } from "./components";
 
 function App() {
   return (
     <div className="flex bg-none flex-col justify-start  items-stretch h-auto">
-      <Router>
+      <Router basename="/Web_Dev_FirstTrial">
         <Nav />
         {/* <Heros /> */}
-        <div className="bg-cyan-50 mt-4 rounded-4xl shadow-lg">
+        <div className="bg-white mt-4 rounded-4xl shadow-lg">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="posts/post-1" element={<Post1 />}></Route>

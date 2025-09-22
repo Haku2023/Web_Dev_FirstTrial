@@ -48,36 +48,39 @@ export default function About() {
                 daily thoughts here.
               </p>
               <ul className="text-left">
-                <li>
-                  <p>
-                    <strong>Programming: </strong> I have taste the sweet of the
-                    programming nowdays,{" "}
-                    <em>fortran, bash, python, typescript, c#, lua, C</em> All
-                    Language let me talk with computer not so awkward.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Natural Language: </strong> Talking with pc has no
-                    relation with emotion. Maybe sometimes the Fully Control
-                    satisify some part of the heart. But no more than talking
-                    with people. Since the Programming Language almost written
-                    by EN, it is portable and light. Japanese and Chinese have
-                    Kanji, which can contain a lot of emotion and meaning there,
-                    I love them so much!
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Gym, Refresh, Thinking:</strong>I would say I
-                    haven't gone Gym 7 days, I always do things to the midnight
-                    which makes me wake late, leading to the low energy and
-                    tired for exercise. But that should be modified, right? I
-                    feel that as the age goes up, it will be too hard to change
-                    a bad habbit, but there should be a reason. I'd like to
-                    think and think, until I find that reason.
-                  </p>
-                </li>
+                <blockquote className="border-l-4 border-l-indigo-500 pl-3 bg-indigo-50 rounded">
+                  <li>
+                    <p>
+                      <strong>Programming: </strong> I have taste the sweet of
+                      the programming nowdays,{" "}
+                      <em>fortran, bash, python, typescript, c#, lua, C</em> All
+                      Language let me talk with computer not so awkward.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Natural Language: </strong> Talking with pc has no
+                      relation with emotion. Maybe sometimes the Fully Control
+                      satisify some part of the heart. But no more than talking
+                      with people. Since the Programming Language almost written
+                      by EN, it is portable and light. Japanese and Chinese have
+                      Kanji, which can contain a lot of emotion and meaning
+                      there, I love them so much!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Gym, Refresh, Thinking:</strong>I would say I
+                      haven't gone Gym 7 days, I always do things to the
+                      midnight which makes me wake late, leading to the low
+                      energy and tired for exercise. But that should be
+                      modified, right? I feel that as the age goes up, it will
+                      be too hard to change a bad habbit, but there should be a
+                      reason. I'd like to think and think, until I find that
+                      reason.
+                    </p>
+                  </li>
+                </blockquote>
               </ul>
 
               <hr className="border-black my-2" />
