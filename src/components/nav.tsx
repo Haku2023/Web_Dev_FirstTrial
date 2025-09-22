@@ -42,7 +42,7 @@ function Nav() {
       <h1 className="text-blackfont-serif text-cyan-100 font-bold">
         Hello There, Welcome to The Haku's HomePage!
       </h1>
-      <h2 className="text-black">message from backend: {message}</h2>
+      {/* <h2 className="text-black">message from backend: {message}</h2> */}
       <nav className=" flex h-16 flex-row m-4 justify-between ">
         <Link
           ref={posts_btn_1}

@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  // HashRouter as Router,
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import { About, Posts, Post1, Post2, Gpt, Claude, Gemini } from "./pages";
 import { Footer, Nav, Home } from "./components";
 
