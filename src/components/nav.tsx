@@ -9,7 +9,8 @@ import {
 } from "../utils/opacity-translate";
 
 function Nav() {
-  const [message, setMessage] = useState("");
+  //const [message, setMessage] = useState("");
+  const [, setMessage] = useState("");
 
   const posts_btn_1 = useRef<HTMLAnchorElement>(null);
   const posts_btn_2 = useRef<HTMLAnchorElement>(null);
