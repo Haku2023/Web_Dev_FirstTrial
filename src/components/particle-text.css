@@ -1,0 +1,67 @@
+/* Letters */
+#root .particle-text span {
+  display: inline-block;
+  /* the inline style sets animation name+timing+delay+forwards */
+  will-change: transform, opacity, filter;
+}
+
+/* Reveal animation for each letter */
+@keyframes glow-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+    filter: blur(4px);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Particles */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  /* simple bright dot */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  pointer-events: none;
+  opacity: 0;
+  animation:
+    particle-pop 0.6s ease-out forwards,
+    particle-fade 1.8s ease-in 0.6s forwards;
+}
+
+/* The “pop” outwards */
+@keyframes particle-pop {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc((var(--dx, 0)) * 1px), calc((var(--dy, 0)) * 1px))
+      scale(1);
+    opacity: 1;
+  }
+}
+
+/* Then fade away */
+@keyframes particle-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

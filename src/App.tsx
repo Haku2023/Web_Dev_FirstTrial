@@ -10,7 +10,7 @@ import { Footer, Nav, Home } from "./components";
 
 function App() {
   return (
-    <div className="flex bg-none flex-col justify-start  items-stretch h-auto">
+    <div className="flex bg-none flex-col justify-center lg:max-w-3/4  items-stretch h-auto">
       <Router basename="/Web_Dev_FirstTrial">
         <Nav />
         {/* <Heros /> */}

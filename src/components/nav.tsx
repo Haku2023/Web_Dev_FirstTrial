@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import pumpkin from "../assets/pumpkin.png";
+import witches from "../assets/witches.png";
 import { useState, useEffect, useRef } from "react";
 import {
   translate_opacity_1,
@@ -36,33 +38,45 @@ function Nav() {
     fetchMessage();
   }, []);
   return (
-    <div
-      ref={head_div}
-      className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-900 rounded-3xl px-4 py-8 m-0 "
-    >
-      <h1 className="text-blackfont-serif text-cyan-100 font-bold">
-        Hello There, Welcome to The Haku's HomePage!
-      </h1>
-      {/* <h2 className="text-black">message from backend: {message}</h2> */}
-      <nav className=" flex h-16 flex-row m-4 justify-between ">
-        <Link
-          ref={posts_btn_1}
-          className="bg-amber-300  m-3 py-2 px-4 rounded-4xl font-bold text-black"
-          to="/about"
-        >
-          About
-        </Link>
+    <Link to="/">
+      <div
+        ref={head_div}
+        className="flex flex-col items-center justify-center bg-gradient-to-r from-purple-700 to-blue-900 rounded-3xl px-4 py-4 m-0 "
+        // className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-900 rounded-3xl px-4 py-4 m-0 "
+      >
+        <h1 className="font-[Spicy_Rice] text-blackfont-serif  text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-50 to-orange-400">
+          Hello There, Welcome to The Haku's HomePage!
+        </h1>
+        {/* <h2 className="text-black">message from backend: {message}</h2> */}
+        <nav className=" flex  flex-row mt-2 justify-between ">
+          <Link
+            ref={posts_btn_1}
+            className="flex justify-center items-center bg-amber-200  mx-3 py-2 px-4 rounded-4xl hover:bg-amber-700 hover:text-amber-50 text-black"
+            to="/about"
+          >
+            <img src={pumpkin} alt="pumpkin" className="max-h-6.5 mr-2" />
+            <span className="text-base  font-bold lg:text-2xl font-[Butcherman]">
+              About
+            </span>
+          </Link>
 
-        <Link
-          ref={posts_btn_2}
-          className="bg-amber-300 m-3 py-2 px-4  rounded-4xl font-bold text-black"
-          to="/posts"
-        >
-          {/* <span ref={text_btn_2} className="hidden"> */}
-          <span ref={text_btn_2}>Posts</span>
-        </Link>
-      </nav>
-    </div>
+          <Link
+            ref={posts_btn_2}
+            className="flex justify-center items-center bg-amber-200 mx-3 py-2 px-4  rounded-4xl hover:bg-amber-700 hover:text-amber-50  text-black "
+            to="/posts"
+          >
+            <img src={witches} alt="witches" className="max-h-6.5 mr-2" />
+            {/* <span ref={text_btn_2} className="hidden"> */}
+            <span
+              className="text-base font-bold lg:text-2xl font-[Butcherman]"
+              ref={text_btn_2}
+            >
+              Posts
+            </span>
+          </Link>
+        </nav>
+      </div>
+    </Link>
   );
 }
 
