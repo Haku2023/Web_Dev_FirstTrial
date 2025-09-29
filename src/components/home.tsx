@@ -10,7 +10,7 @@ function Home() {
     // Add a small delay to ensure proper rendering
     const timer = setTimeout(() => {
       if (helloween_text.current) {
-        particleEffect(helloween_text.current, "Happy Helloween! ");
+        particleEffect(helloween_text.current, ["Happy", "Helloween!"]);
       }
     }, 100);
 
@@ -27,7 +27,7 @@ function Home() {
 
       <div
         ref={helloween_text}
-        className="particle-text absolute top-1/3 left-1/4  z-10 text-amber-950 text-5xl font-bold tracking-[2px] text-center whitespace-pre-wrap"
+        className="particle-text absolute top-1/3 left-1/4 w-1/2  z-10 text-amber-950 text-5xl font-bold tracking-[2px] text-center whitespace-pre-wrap"
       />
     </div>
   );

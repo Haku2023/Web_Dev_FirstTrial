@@ -1,26 +1,34 @@
 // Particle Effect
-function particleEffect(element: HTMLElement, text: string) {
+function particleEffect(element: HTMLElement, text: string[]) {
   element.innerHTML = "";
   element.style.display = "block";
 
-  const letters = text.split("");
-  letters.forEach((letter, index) => {
-    const span = document.createElement("span");
-    span.textContent = letter === " " ? "\u00A0" : letter;
-    span.style.opacity = "0";
-    span.style.animation = `glow-reveal 0.4s ease-out ${index * 0.08}s forwards`;
-    element.appendChild(span);
+  const letter_num = text.length;
+  console.log(`letter_num:${letter_num}`);
+  for (let i = 0; i < letter_num; i++) {
+    const div = document.createElement("div");
+    element.appendChild(div);
+    text[i].split("").forEach((letter, index) => {
+      console.log(`letter:${letter}`);
+      console.log(`index:${index}`);
+      index = i > 0 ? text[i - 1].length : 0;
+      const span = document.createElement("span");
+      span.textContent = letter === " " ? "\u00A0" : letter;
+      span.style.opacity = "0";
+      span.style.animation = `glow-reveal 0.4s ease-out ${index * 0.08}s forwards`;
+      div.appendChild(span);
 
-    // Add particles
-    if (letter !== " ") {
-      setTimeout(
-        () => {
-          createParticles(element, span);
-        },
-        index * 80 + 200,
-      );
-    }
-  });
+      // Add particles
+      if (letter !== " ") {
+        setTimeout(
+          () => {
+            createParticles(element, span);
+          },
+          index * 80 + 200,
+        );
+      }
+    });
+  }
 }
 
 function createParticles(container: HTMLElement, letterElement: HTMLElement) {
