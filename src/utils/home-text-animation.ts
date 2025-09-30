@@ -9,8 +9,9 @@ function particleEffect(element: HTMLElement, text: string[]) {
     const div = document.createElement("div");
     element.appendChild(div);
     text[i].split("").forEach((letter, index) => {
-      console.log(`letter:${letter}`);
-      console.log(`index:${index}`);
+      // haku check
+      // console.log(`letter:${letter}`);
+      // console.log(`index:${index}`);
       index = i > 0 ? text[i - 1].length : 0;
       const span = document.createElement("span");
       span.textContent = letter === " " ? "\u00A0" : letter;

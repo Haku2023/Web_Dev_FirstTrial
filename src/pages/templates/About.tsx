@@ -1,7 +1,7 @@
 import selfImg from "../../assets/self.jpg";
 export default function About() {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-profile-up/80 to-profile-down/80 rounded-4xl">
       <main className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-6">
           <article>
@@ -17,6 +17,7 @@ export default function About() {
                     Ocean and Sky are Awesome!
                   </h3>
                   <p className="font-semibold self-end">Haku</p>
+                  <p className="font-semibold self-end">baihdong@gmail.com</p>
                   <time className="self-end" dateTime="2025-08-07">
                     August 07, 2025
                   </time>
@@ -48,7 +49,7 @@ export default function About() {
                 daily thoughts here.
               </p>
               <ul className="text-left">
-                <blockquote className="border-l-4 border-l-indigo-500 pl-3 bg-indigo-50 rounded">
+                <blockquote className="border-l-4 border-l-indigo-500 pl-3 bg-indigo-50/20 rounded">
                   <li>
                     <p>
                       <strong>Programming: </strong> I have taste the sweet of

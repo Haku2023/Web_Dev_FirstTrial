@@ -6,7 +6,12 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        morning: "#E3C794",
+        helloween_cookie_outer: "#D4A66E",
+      },
+    },
   },
   plugins: [],
 };
