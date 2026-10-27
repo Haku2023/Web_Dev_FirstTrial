@@ -6,7 +6,7 @@ function Footer() {
         <div className="text-center">
           <span className="text-2xl font-bold text-white">Haku Blog</span>
           <p className="mt-4 text-white">
-            © 2025 Haku Blog. All rights reserved.
+            © 2026 Haku Blog. All rights reserved.
           </p>
         </div>
       </div>

@@ -2,13 +2,13 @@ import selfImg from "../../assets/self.jpg";
 export default function About() {
   return (
     <div className="bg-gradient-to-b from-profile-up/80 to-profile-down/80 rounded-4xl">
-      <main className="py-8 md:py-12">
+      <main className="py-2 md:py-2">
         <div className="max-w-4xl mx-auto px-6">
           <article>
             <header className="mb-8">
               <div className="flex flex-col items-center text-gray-500">
                 <img
-                  className="aspect-auto rounded-full mr-4"
+                  className="w-80 aspect-[3/4] rounded-full mr-1"
                   src={selfImg}
                   alt="Haku"
                 />
@@ -33,53 +33,77 @@ export default function About() {
 
             <div className="flex flex-col text-black ">
               <p>
-                Hi there, my name is <strong>Haku,</strong> came from China,
-                Study at Kyoto University as a Doctor now.
+                Hi there, my name is <strong>Haku,</strong> from China, while
+                working as a CFD engineer in Osaka, I'm still going to get the
+                PHD degree from Kyoto University.
               </p>
               <p>
-                I've been Japan 5 years, have a lot of fun here, Japanese are so
-                friendly. My friends and students in Lab are also nice.
-                まじついてますぜ.
+                I've been Japan 6 years, have a lot of fun here, I love Japanese
+                culture, 関西弁もおもろい！
               </p>
               <hr className="border-black my-2" />
-
-              <h2 className="font-extrabold">What is This Site for </h2>
-              <p>
-                I hope to make it myself homePage, also, I'd like to share my
-                daily thoughts here.
-              </p>
               <ul className="text-left">
                 <blockquote className="border-l-4 border-l-indigo-500 pl-3 bg-indigo-50/20 rounded">
                   <li>
                     <p>
-                      <strong>Programming: </strong> I have taste the sweet of
-                      the programming nowdays,{" "}
-                      <em>fortran, bash, python, typescript, c#, lua, C</em> All
-                      Language let me talk with computer not so awkward.
+                      <strong>Programming Path: </strong> I mainly used Fortran
+                      for computational Fluid Dynamics(CFD) in the lab, where I
+                      also found that use the shell script(from bash to zsh)
+                      made my work easier. I usd Python to visualize results,
+                      and I'm learning C++ and TypeScript to explore more
+                      aspects of programming. It makes me that C++ uses the{" "}
+                      <code>auto</code> keyword to let the compiler infer types,
+                      while the Typescript adds types and interfaces to
+                      JavaScript to make the code more explicit and structrued.
                     </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Natural Language: </strong> Talking with pc has no
-                      relation with emotion. Maybe sometimes the Fully Control
-                      satisify some part of the heart. But no more than talking
-                      with people. Since the Programming Language almost written
-                      by EN, it is portable and light. Japanese and Chinese have
-                      Kanji, which can contain a lot of emotion and meaning
-                      there, I love them so much!
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Gym, Refresh, Thinking:</strong>I would say I
-                      haven't gone Gym 7 days, I always do things to the
-                      midnight which makes me wake late, leading to the low
-                      energy and tired for exercise. But that should be
-                      modified, right? I feel that as the age goes up, it will
-                      be too hard to change a bad habbit, but there should be a
-                      reason. I'd like to think and think, until I find that
-                      reason.
-                    </p>
+                    <li>
+                      <p>
+                        <strong>Thoughts on AI: </strong> In today's AI era, I
+                        fell that the way we learn is changing. Learning theory
+                        before putting it into practice may still be the best
+                        foundation, but exploring a variety of examples and
+                        learning unknow with AI can also be an effective way to
+                        learn. I'm also learning to use AI more effectively. At
+                        first, I only used ChatGPT through its web interface for
+                        conversations. Then I discovered Claude Code, Codex
+                        which lets me work with an AI assistant in the terminal
+                        and edit files through natual-language instructions.
+                        Later, I found CodeCOmpanion in Neovim, which brings AI
+                        assistance directly into my everyday coding workflow.
+                      </p>
+                      <p>
+                        <strong>A Life Changer: </strong>
+                        When I first encountered Vim in the lab, I struggled
+                        even with basic editing. Then a friend encouraged me to
+                        learn it to improve my editing productivity and
+                        recommended this{" "}
+                        <a
+                          href="https://missing.csail.mit.edu/2020/editors/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 hover:underline"
+                        >
+                          introduction to Vim
+                        </a>
+                        , which completely changed how I saw text editors.
+                        Navigating a file using only the keyboard felt amazing.
+                        Later, after discovering{" "}
+                        <cite>
+                          Building Your Mouseless Development Environment
+                        </cite>
+                        , I switched from Vim to Neovim, which took my coding
+                        experience to another level. Reading{" "}
+                        <cite>Zsh Shell Engineering</cite> helped me appreciate
+                        the power of Zsh and taught me how to organize my shell
+                        configuration into modules and customize it to suit my
+                        workflow. My current setup is WezTerm, Zsh, Neovim, and
+                        CodeCompanion, and I can see myself using it for the
+                        next five years. Recently, with help from CodeCompanion,
+                        I configured debugging in Neovim using the Debug Adapter
+                        Protocol (DAP). Now I can use Neovim for debugging as
+                        well.
+                      </p>
+                    </li>
                   </li>
                 </blockquote>
               </ul>
@@ -96,7 +120,7 @@ export default function About() {
               <p></p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-4">
               <div className="flex flex-wrap gap-10">
                 <span className="bg-blue-100 text-blue-800 text-xl font-medium px-3 py-1 rounded-4xl">
                   Web Design
@@ -111,7 +135,7 @@ export default function About() {
                   Data Analysis
                 </span>
                 <span className="bg-purple-100 text-yellow-800 text-xl font-medium px-3 py-1 rounded-full">
-                  AI
+                  AI Assistant
                 </span>
               </div>
             </div>
