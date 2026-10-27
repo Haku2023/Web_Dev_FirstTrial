@@ -15,8 +15,10 @@ function particleEffect(element: HTMLElement, text: string[]) {
       index = i > 0 ? text[i - 1].length : 0;
       const span = document.createElement("span");
       span.textContent = letter === " " ? "\u00A0" : letter;
-      span.style.opacity = "0";
-      span.style.animation = `glow-reveal 0.4s ease-out ${index * 0.08}s forwards`;
+      // span.style.opacity = "0";
+      // span.style.animation = `glow-reveal 0.5s ease-out  forwards`;
+      span.style.animation = "none";
+      span.style.opacity = "1";
       div.appendChild(span);
 
       // Add particles

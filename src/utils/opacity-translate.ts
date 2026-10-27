@@ -6,7 +6,7 @@ function translate_opacity_1(element: HTMLElement, seconds: number) {
     translate: (string | number)[];
   } */
   const keyframes: Keyframe[] = [
-    { opacity: 0, translate: "-100px" },
+    { opacity: 0, translate: "0px" },
     { opacity: 1, translate: "0px" },
   ];
 
