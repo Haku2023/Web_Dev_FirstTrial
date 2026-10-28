@@ -44,18 +44,17 @@ function Home() {
                 ref={helloween_text}
                 className="relative particle-text mb-6 text-center text-5xl font-bold text-amber-950"
               >
-                Small Projects
+                Tiny Hubs
               </h2>
               <div className="grid w-full max-w-5xl grid-cols-1 gap-6 p-6 md:grid-cols-2 translate-x-4">
                 <article className="flex flex-col rounded-2xl bg-white/90 p-6 shadow-lg">
                   <h2 className="text-2xl font-bold text-amber-950">
-                    1D Cip vs Upwind
+                    1D CFD Simulation (Fortran/Python)
                   </h2>
 
                   <p className="mt-3 text-sm leading-relaxed text-stone-700">
                     visualize the difference between Cip and Upwind methods in
-                    1D fluid dynamics simulations at different CFL
-                    numbers.(fortran/python)
+                    1D fluid dynamics simulations at different CFL numbers.
                   </p>
 
                   <a
@@ -66,17 +65,25 @@ function Home() {
                   >
                     Explore the project →
                   </a>
+                  <a
+                    href="https://github.com/Haku2023/Seminar_Taisui/tree/main/src"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" font-semibold text-amber-800 hover:underline"
+                  >
+                    source codes →
+                  </a>
                 </article>
                 <article className="flex flex-col rounded-2xl bg-white/90 p-6 shadow-lg">
                   <h2 className="text-2xl font-bold text-amber-950">
-                    CmakeProjects VS Zsh setting on Cygwin
+                    Docs for Cmake(Visual Studio) and Zsh(Cygwin)
                   </h2>
 
                   <p className="mt-3 text-sm leading-relaxed text-stone-700">
                     A simple CMake project to demonstrate the usage of CMake for
                     several different programming languages used on Visual
                     Studio. The Zsh setting on Cygwin is also provided to
-                    enhance the development environment.(cmake/zsh)
+                    enhance the development environment.
                   </p>
 
                   <a
@@ -90,7 +97,7 @@ function Home() {
                 </article>
                 <article className="flex flex-col rounded-2xl bg-white/90 p-6 shadow-lg">
                   <h2 className="text-2xl font-bold text-amber-950">
-                    Topographic visualization webapp
+                    Topographic Visualization(Python/Dash)
                   </h2>
 
                   <p className="mt-3 text-sm leading-relaxed text-stone-700">
@@ -100,6 +107,26 @@ function Home() {
 
                   <a
                     href="https://github.com/Haku2023/chikei-visualization-taisui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-auto pt-6 font-semibold text-amber-800 hover:underline"
+                  >
+                    Explore the project →
+                  </a>
+                </article>
+                <article className="flex flex-col rounded-2xl bg-white/90 p-6 shadow-lg">
+                  <h2 className="text-2xl font-bold text-amber-950">
+                    Animation Tool(Python)
+                  </h2>
+
+                  <p className="mt-3 text-sm leading-relaxed text-stone-700">
+                    Create MP4 animations from JPG image sequences using either
+                    a desktop app(easy to manipulate) or a batch script for
+                    multiple simulation cases.
+                  </p>
+
+                  <a
+                    href="https://github.com/Haku2023/Animation_Tool"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-auto pt-6 font-semibold text-amber-800 hover:underline"
